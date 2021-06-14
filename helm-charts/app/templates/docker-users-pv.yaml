@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+    name: docker-users-pv
+spec:
+    capacity:
+        storage: 128M
+    accessModes:
+        - ReadWriteOnce
+    hostPath:
+        path: /data/docker-users-persistent-volume

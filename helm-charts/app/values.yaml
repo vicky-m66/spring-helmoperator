@@ -40,7 +40,7 @@ securityContext: {}
 
 service:
     port: 8086
-    type: NodePort
+    type: LoadBalancer
 dbservice:
     port: 3306
     type: NodePort
